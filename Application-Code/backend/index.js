@@ -9,12 +9,11 @@ connection();
 app.use(express.json());
 app.use(
   cors({
-    origin:
-      "http://k8s-threetie-mainlb-73c240e86c-474203647.ap-southeast-2.elb.amazonaws.com",
+    origin: ["<ALB-URL>", "http://localhost:5173"],
   })
 );
 
-app.get("/ok", (req, res) => {
+app.get("/", (req, res) => {
   res.status(200).send("ok");
 });
 
