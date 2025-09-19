@@ -7,11 +7,16 @@ const app = express();
 connection();
 
 app.use(express.json());
-app.use(cors());
-
-app.get('/ok', (req, res) => {
-    res.status(200).send('ok')
+app.use(
+  cors({
+    origin:
+      "http://k8s-threetie-mainlb-73c240e86c-474203647.ap-southeast-2.elb.amazonaws.com",
   })
+);
+
+app.get("/ok", (req, res) => {
+  res.status(200).send("ok");
+});
 
 app.use("/api/tasks", tasks);
 
