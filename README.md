@@ -1,42 +1,12 @@
 # #ThreeTierAppDeployToEKS
 
-## Overview
-
-This repository hosts the `#ThreeTierAppDeployToEKS` for the TWS community.
-The challenge involves deploying a Three-Tier Web Application using ReactJS, NodeJS, and MongoDB, with deployment on AWS EKS. Participants are encouraged to deploy the application, add creative enhancements, and submit a Pull Request (PR). Merged PRs will earn exciting prizes!
-
-## Prerequisites
-
-- Basic knowledge of Docker, and AWS services.
-- An AWS account with necessary permissions.
-
-## Application Code
-
-The `Application-Code` directory contains the source code for the Three-Tier Web Application. Dive into this directory to explore the frontend and backend implementations.
-
-## Kubernetes Manifests Files
-
-The `Kubernetes-Manifests-Files` directory holds Kubernetes manifests for deploying your application on AWS EKS. Understand and customize these files to suit your project needs.
-
-## Project Details
-
-🛠️ **Tools Explored:**
-
-- Terraform & AWS CLI for AWS infrastructure
-- Jenkins, Sonarqube, Terraform, Kubectl, and more for CI/CD setup
-- Helm, Prometheus, and Grafana for Monitoring
-- ArgoCD for GitOps practices
-
 🚢 **High-Level Overview:**
 
-- IAM User setup & Terraform magic on AWS
-- Jenkins deployment with AWS integration
+- IAM User setup on AWS
 - EKS Cluster creation & Load Balancer configuration
 - Private ECR repositories for secure image management
 - Helm charts for efficient monitoring setup
 - GitOps with ArgoCD - the cherry on top!
-
-📈 **The journey covered everything from setting up tools to deploying a Three-Tier app, ensuring data persistence, and implementing CI/CD pipelines.**
 
 ### Step 1: IAM Configuration
 
